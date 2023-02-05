@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api/v1")
 public class TestController {
 
     @Autowired
     private TestService tService;
 
-    @GetMapping("/g")
+    @GetMapping("/test")
     public Test test1(){
         Test dto = tService.test1();
         System.out.println(dto.getTest());
