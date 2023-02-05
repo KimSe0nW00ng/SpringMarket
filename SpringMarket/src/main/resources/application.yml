@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #db?? ??!
+    url: jdbc:mysql://localhost:3307/market?serverTimezone=Asia/Seoul
+    username: solution
+    password: 1234
+
+# ????? ??
+mybatis:
+  mapper-locations: classpath:static/mapper/*.xml
+
+
