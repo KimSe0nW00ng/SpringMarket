@@ -7,4 +7,8 @@
     <select id="test1" resultType="com.spring.market.model.Test">
         SELECT 1 as 'test'
     </select>
+    <select id="findUser" parameterType="com.spring.market.model.LoginDto" resultType="com.spring.market.model.User">
+        SELECT * FROM member
+        WHERE member_id = #{member_id}
+    </select>
 </mapper>
